@@ -13,12 +13,12 @@ A quick example of a FUI dialog:
 ```lua
 Design
   '@dlgContent' [[
-      label #msg 'dialog-label'
+      label #msg 'dlg-label'
   ]]
   
   '@dlgButtons' [[
-      button #cancel  'dialog-button-cancel' .btn-cancel
-      button #confirm 'dialog-button-ok'     .btn-confirm
+      button #cancel  'dlg-button-cancel' .btn-cancel
+      button #confirm 'dlg-button-ok'     .btn-confirm
   ]]
   
 local dlg = Dialog [[
@@ -28,7 +28,7 @@ local dlg = Dialog [[
 ]]
 
 dlg.on('close', function(eventName,eventData) {
-  game.player.print eventData.button.caption
+  game.player.print eventData.button.caption -- localised caption of button clicked
 }
 
 dlg.show()
