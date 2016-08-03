@@ -19,9 +19,9 @@ Design
   '@dlgButtons' [[
       button #cancel  'dlg-button-cancel' .btn-cancel
       button #confirm 'dlg-button-ok'     .btn-confirm
+  ]]
 --      ↑        ↑          ↑                  ↑
 --     type     name     caption             style
-  ]]
   
 local dlg = Dialog 'Hello World' '@dlgContent' '@dlgButtons'
 
