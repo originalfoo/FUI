@@ -22,9 +22,7 @@ Design
   ]]
   
 local dlg = Dialog [[
-  'Hello World'
-  content=@dlgContent
-  buttons=@dlgButtons
+  'Hello World' content=@dlgContent buttons=@dlgButtons
 ]]
 
 dlg.on('close', function(eventName,eventData) {
