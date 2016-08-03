@@ -31,5 +31,5 @@ dlg.on('close', function(eventName,eventData) {
   game.player.print eventData.button.caption -- localised caption of button clicked
 }
 
-dlg.show()
+dlg.show() -- defaults to local player (player 1)
 ```
